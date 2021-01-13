@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneCheck</title>
+    <link rel="stylesheet" href="/page/Phone/main.css">
+    <script src="script2.js"></script>
+</head>
+<body >
+    <div class="header">
+        <img src="/img/Component 2 – 1.png">
+        <div class="text-centered">NẠP TIỀN ĐIỆN THOẠI</div>
+    </div>
+    <label style="position:absolute;left:306px;top:215px;width:100%;font-size:24px;font-family:Arial,Helvetica,sans-serif;color:#ff9d00;">VUI LÒNG KIỂM TRA LẠI THÔNG TIN</label>
+
+    <label style="position:absolute;left:362px;top:273px;" class="lb_sdt">Số điện thoại: <span style="font-weight: bold;" id="sdt"></span></label>
+    <label style="position:absolute;left:390px;top:320px;" class="lb_sdt">Nhà mạng: </label>
+    <img style="position:absolute;left:524px;top:321px" id="img_id" src=""></img>
+    <label style="position:absolute;left:362px;top:380px;" class="lb_sdt">Mệnh giá thẻ: <span id="currency"></span><span id="vnd">VND</span></label>
+    <form action="http://127.0.0.1:5500/page/Phone/Phone.html">
+        <input class="back_btn" type="image" src="/img/Group 737.png">
+    </form>
+    <button class="next_btn">Nạp ngay</button>
+    <img style="position: absolute; left: 590px; top: 510px;" src="/img/Group 734.png">
+    <img style="position: absolute; left: 730px; top: 510px;" src="/img/Capture.PNG">
+    <script>
+        let sdt = sessionStorage.getItem("numberphone");
+        document.getElementById("sdt").textContent = sdt;
+    </script>
+    <script>
+        let path = sessionStorage.getItem("path_img");
+        document.getElementById("img_id").src = path;
+    </script>
+    <script>
+        let currency = sessionStorage.getItem("currency");
+        document.getElementById("currency").textContent = currency;
+    </script>
+</body>
+</html>
