@@ -269,3 +269,28 @@ body {
 #matrix-3 td {
     padding: 13px;
 }
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.elec_btn {
+    width: 368px;
+    height: 70px;
+    border-color: #fa9658;
+    background-color: #f8f8f8;
+    border-radius: 2px;
+    outline: none;
+}
+
+.elec_btn:focus {
+    background-color: #ffd9c1;
+}

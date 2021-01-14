@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home</title>
-<link href="/page/Phone/main.css" rel="stylesheet">
+<link href="/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,22 +16,22 @@
         HƯỚNG DẪN NẠP TIỀN ĐIỆN THOẠI
     </label>
 
-    <div style="position: absolute;left:145px;top:240px;">
+    <div style="left:145px;top:240px;" class="absolute">
         <div class="circle"></div>
         <div class="textin_circle">1</div>
     </div>
 
-    <div style="position: absolute;left:145px;top:330px;">
+    <div style="left:145px;top:330px;" class="absolute">
         <div class="circle"></div>
         <div class="textin_circle">2</div>
     </div>
 
-    <div style="position: absolute;left:145px;top:420px;">
+    <div style="left:145px;top:420px;" class="absolute">
         <div class="circle"></div>
         <div class="textin_circle">3</div>
     </div>
 
-    <div style="position:absolute;left: 200px;top: 220px;">
+    <div style="left: 200px;top: 220px;" class="absolute">
         <table id="matrix-2">
             <tr>
                 <td>
@@ -51,24 +51,28 @@
         </table>
     </div>
 
-    <div style="position:absolute;top:170px;left:700px;">
+    <div style="top:170px;left:700px;" class="absolute">
         <table id="matrix-3">
             <tr>
                 <td>
                     <form action="http://127.0.0.1:5500/page/Phone/Phone.html">
                         <div>
                             <button style=" background-color:#89b266; " class="menu-btn ">Nạp tiền điện thoại</button>
-                            <img style="position:absolute;top:30px;left:90px;" src="img/Group 722.png ">
+                            <form action="http://127.0.0.1:5500/page/Phone/Phone.html">
+                                <input class="absolute" type="image" src="img/Group 722.png" style="top:30px;left:90px;outline:none;">
+                            </form>
                         </div>
                     </form>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <form action="">
+                    <form action="http://127.0.0.1:5500/page/Electric/Electric.html">
                         <div>
                             <button style=" background-color:#f4aa34; " class="menu-btn ">Thanh toán tiền điện</button>
-                            <img style="position:absolute;top:150px;left:90px;" src="img/light-bulb.png ">
+                            <form action="http://127.0.0.1:5500/page/Electric/Electric.html">
+                                <input class="absolute" type="image" src="img/light-bulb.png " style="outline:none;top:150px;left:90px;">
+                            </form>
                         </div>
                     </form>
                 </td>
@@ -78,7 +82,9 @@
                     <form action="">
                         <div>
                             <button style=" background-color:#4390b2; " class="menu-btn ">Thanh toán tiền nước</button>
-                            <img style="position:absolute;top:275px;left:90px;" src="img/Path 50.png ">
+                            <form action="">
+                                <input type="image" style="outline:none;top:275px;left:90px;" class="absolute" src="img/Path 50.png ">
+                            </form>
                         </div>
                     </form>
                 </td>
@@ -86,11 +92,12 @@
         </table>
     </div>
 
-    <img style="position:absolute;left: 283px; top: 531px;" src="img/Group 720.png">
+    <img style="left: 283px; top: 531px;" class="absolute" src="img/Group 720.png">
 
-    <label style="position:absolute;top:573px;left:301px;
+    <label class="absolute" style="top:573px;left:301px;
                     font-size:16px;font-weight:bold;font-family:Arial,Helvetica,sans-serif;">
         Mọi thắc mắc xin quý khách vui lòng liên hệ : <span style="color:#288ad6">1900 0909</span></label>
-</body>
+
+    < </body>
 
 </html>
