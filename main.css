@@ -281,7 +281,9 @@ body {
 .absolute {
     position: absolute;
 }
-
+.italic{
+    font-style:italic;
+}
 .elec_btn {
     width: 368px;
     height: 70px;
