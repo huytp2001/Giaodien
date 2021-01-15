@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/main.css">
 </head>
-<body>  
-    <div class="image">
-        <img src="/ing/Component 2 – 6.png">
-        <div class="absolute" style="left:352px;top:187px;width:320px;height: 213px;">
-            <img src="/ing/Image 27.png">
-        </div>
-    </div> 
-    <div style= "font-size: 32px;top:42px;left:336px;"  class="arial bold absolute" >DỊCH VỤ THANH TOÁN</div>
+
+<body>
+    <div class="header">
+        <img src="/img/Component 2 – 1.png">
+        <div class="text-centered">DỊCH VỤ THANH TOÁN</div>
+    </div>
+    <div class="absolute" style="left:352px;top:187px;"><img src="/img/Image 27.png"></div>
     <div style="font-size: 20px;top:145px;left:268px;color: #FF9D00" class=" arial bold italic absolute"> MỜI QUÝ KHÁCH CHO TIỀN VÀO KHE THANH TOÁN</div>
-    <div style="font-size: 20px;top:420px;left:367px;" class=" arial absolute"> Hệ thống hủy giao dịch sau:</div>
+    <div style="font-size: 20px;top:420px;left:367px;" class=" arial absolute"> Hệ thống hủy giao dịch sau : <span id="countdown" class="arial" style="font-size:20px;color:#d52525"></span></div>
     <div style="font-size: 16px;top:447px;left:413px;" class=" arial absolute"> (nếu không nhận được tiền)</div>
+    <form action=""><input class="back_btn" type="image" src="/img/Group 737.png"></form>
+
+    <form action="">
+        <button class="next_btn">Tiếp tục</button>
+    </form>
+
+    <img style="position: absolute; left: 590px; top: 510px;" src="/img/Group 734.png">
+    <img style="position: absolute; left: 730px; top: 510px;" src="/img/Capture.PNG">
+
+    <script>
+        var timeleft = 30;
+        var Timer = setInterval(countdown, 1000);
+
+        function countdown() {
+            if (timeleft <= 0) {
+                clearInterval(Timer);
+                document.getElementById("countdown").innerHTML = "0s";
+            } else {
+                document.getElementById("countdown").innerHTML = timeleft + "s";
+            }
+            timeleft -= 1;
+        }
+    </script>
+
 </body>
+
 </html>
